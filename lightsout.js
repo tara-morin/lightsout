@@ -32,7 +32,7 @@ function setBoardTiles(data){
     let box_count = 0;
     //make the boxes
     for (let r = 0; r < row_count; r++) {
-        const $row = $('<div class="row"></div>');
+        const $row = $('<div class="game-row"></div>');
         for (let c = 0; c < col_count; c++) {
             //check if box is assigned to be on or off
             let state = Object.values(data[box_count])[0];

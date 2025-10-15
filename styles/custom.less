@@ -1,13 +1,26 @@
-body {
+html, body {
+  height: 100%;
+  margin: 0;
+  background-color: #ffd4f8; 
   font-family: 'Tahoma', sans-serif;
-  background-color: #ffd4f8;
 }
 
 .main-container {
-  margin: 0 auto;
-  padding: 20px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; 
+  max-height: 100vh;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+#game_board {
+  display: flex;
+  flex-direction: column;
+  width: 100%;           
+  margin-top: 20px;
+  max-height: 80vh;
 }
 
 .on_box {
@@ -24,6 +37,7 @@ body {
   border: 1px solid #333;
 }
 
-.row {
+.game-row {
   display: flex;
+  width: 100%;
 }
