@@ -109,6 +109,7 @@ function resetBoard(){
 
     //when the new button gets clicked, regenerate the same form I had earlier
     button.on('click', function(){
+        board_made = false;
     $('.main-container').empty();
     $('.main-container').append(`
         <form id="form" class="container mt-4">
