@@ -9,12 +9,10 @@ function setup(){
     else{     
         row_count = parseInt($("#row_count").val().trim());
         col_count = parseInt($("#column_count").val().trim());
-        $.get(
-            'setup.php',
-            {"row_count": row_count,"col_count": col_count},
-            setBoardTiles(data),
-            'json'
-        );
+        $.get('setup.php', 
+        { row_count, col_count }, 
+        setBoardTiles, 
+        'json');
     }  
 }
 
